@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    scroll-behavior: smooth;
+    scroll-margin-top: 60px;
+    -ms-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+span{
+    color: var(--verde);
+}
+p{
+    font-size: 20px;
+    font-family: 'Imprima', sans-serif;
+}
+h1{
+    font-size:34px;
+}
+:root {
+    --roxo-escuro: #211269;
+    --roxo-medio: #3920B5;
+    --roxo-claro: #512DFF;
+    --verde: #36C285;
+    --largura-sessao: 80vw;
+    --h1-size: 31px;
+    --h3-size: 3vh;
+    --p-size: 2.3vh;
+    --textos-size:20px;
+}
+
+body{
+    background: var(--roxo-escuro);
+}
+h1, h2, h3, a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    width: 100%;
+    padding: 10px 0;
+    background: var(--roxo-claro);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+header nav, footer nav, .navegacao-mobile{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+header nav a, footer nav a, .navegacao-mobile a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.atual, header nav a:hover,footer nav a:hover, .navegacao-mobile a:hover{
+    background-color: var(--roxo-medio);
+    transition: all .3s ;
+}
+.navegacao-mobile{
+    position: fixed;
+    bottom: 30px;
+    width: var(--largura-sessao);
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+main{
+    height: calc(100vh - 60px);
+    max-height: 2510px;
+    background: radial-gradient(84.3% 99.55% at 74.27% 44.14%, #211369 0%, #512DFF 100%);
+    display: flex;
+    align-items: center;
+}
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    height: 100%;
+}
+
+main .apresentacao{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.texto-destaque{
+    width: fit-content;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, var(--verde), var(--roxo-claro));
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 32 px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5vh;
+}
+
+main .apresentacao .texto-destaque{
+    left: 0;
+    transform: none;
+    margin: 0;
+    font-size: var(--h3-size);
+    text-align: center;
+}
+main .apresentacao h1{
+    font-size: var(--h1-size);
+}
+main .apresentacao #fullstackdev{
+    color: #D9D9D9;
+    margin-left: 80px;
+    font-size: calc(var(--h3-size) + .3vh);
+    font-family: 'Imprima', sans-serif;
+
+}
+main .apresentacao #fullstackdev::before{
+    content: "";
+    width: 60px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    position: absolute;
+    transform: translateY(11px) translateX(-80px);
+}
+main .apresentacao p{
+    width: 85%;
+    font-size: var(--p-size);
+}
+main .apresentacao .social{
+    display: flex;
+    gap: 20px;
+}
+main .apresentacao .social a img{
+    background: var(--roxo-claro);
+    padding: 9px;
+    border-radius: 50%;
+    border: var(--roxo-claro) 1px solid;
+}
+main .apresentacao .social a img:hover{
+    border: white 1px solid;
+    transition: all .3s;
+}
+main .apresentacao button, .botoes button{
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 8px 40px;
+    background: var(--verde);
+    border-radius: 210px;
+    border: 2px solid var(--verde);
+    cursor: pointer;
+}
+main .apresentacao button:hover, .botoes button:hover{
+    background: none;
+    border: 2px solid var(--verde);
+    transition: .3s;
+}
+main #deslize{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2.5vh;
+    line-height: 0px;
+}
+main #deslize::before{
+    content: "";
+    width: clamp(180px, 20vw, 375px);
+    height: 4px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+}
+main #deslize img{
+    animation-name: deslize;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: inline-block;
+    font-size: 10px;
+}
+#fotoPerfil{
+    max-height: 75vh;
+    margin-bottom: 100px;
+}
+#fotoPerfil2{
+    display: none;
+}
+@keyframes deslize {
+    0%{transform: translateY(-0px);}
+    100%{transform: translateY(20px);}
+}
+
+section{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--largura-sessao);
+    margin-top: 60px;
+}
+.special-title{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+.special-title::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: var(--verde);
+    bottom: -10px;
+    left: 0;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.caixas{
+    display: flex;
+    gap: 40px;
+}
+
+.caixas .box{
+    background: var(--roxo-medio);
+    border-radius: 20px;
+    border: 1px solid var(--roxo-claro);
+    padding: 20px 25px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+#box-destaques{
+    max-width: 538px;
+    min-width: 215px;
+}
+
+.box h3{
+    text-align: center;
+    font-size: 24px;
+}
+.box p{
+    font-size: 18px;
+}
+.skills .caixas .box{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills .caixas .box h3{
+    margin-bottom: 20px;
+}
+.skills .caixas .box .divisor{
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+.skills .caixas .box .divisor p{
+    width: -webkit-fill-available;
+}
+.skills .caixas .box .divisor span{
+    margin-left: 31px;
+}
+
+footer{
+    background: var(--roxo-claro);
+    border-top: 1px solid white;    
+    margin-top: 200px;
+}
+footer section{
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .special-title{
+    margin-bottom: 20px;
+}
+footer nav{
+    justify-content: start;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 100;
+}
+footer .topo{
+    text-align: center;
+}
+footer .topo a img{
+    background: var(--roxo-medio);
+    padding: 7px;
+    border-radius: 20px;
+    transform: rotate(180deg);
+    transition: .3s;
+    border: 1px solid var(--roxo-medio);
+}
+footer .topo a img:hover{
+    border: 1px solid white;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+/*pagina curriculo*/
+.curriculo{
+    display: flex;
+    margin-top: 0;
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: space-between;
+}
+.informacoes{
+    height: 60%;
+}
+.curriculo img{
+    height: 70vh;
+}
+.curriculo .texto-destaque{
+    margin: 0 0 50px;
+    transform: none;
+    left: 0;
+}
+.infos, .infos div{
+    display: flex;
+    gap: 20px;
+}
+.infos div{
+    flex-direction: column;
+    gap: 10px;
+}
+.botoes{
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+.botoes button{
+    border-radius: 0;
+}
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 25px;
+}
+.servico{
+    background: var(--roxo-medio);
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.servico img{
+    height: 70px;
+}
+.servico h2{
+    text-align: center;
+}
+.servico p{
+    width: 100%;
+}
+.experiencia{
+    width: 45%;
+    border-radius: 10px;
+    background: var(--roxo-medio);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+}
+.experiencia h3{
+    padding: 5px 10px;
+    background: var(--roxo-claro);
+    border-radius: 50px;
+    width: fit-content;
+}
+.experiencia h2{
+    font-size: 20px;
+    width: fit-content;
+    margin: 0;
+    left: 0;
+    transform: none;
+}
+.experiencia .texto-destaque{
+    margin: 0;
+}
+.experiencia p{
+    font-size: 18px;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    max-width: 250px;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 10px;
+}
+.card h1{
+    color: var(--roxo-escuro);
+}
+.card p{
+    color: black;
+}
+/* pagina portifolio*/
+.descricao{
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.filtros-box{
+    display: inline-flex;
+    position: relative;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: calc(8px + 40px);
+    
+}
+.filtro input{
+    display: none;
+}
+.filtro label{
+    padding: 8px 10px;  
+    background: var(--roxo-medio);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.filtro label:hover{
+    background: var(--verde);
+}
+.filtro input:checked + label{
+    background: var(--roxo-claro);
+}
+.projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4vw;
+}
+
+.projeto, .contato{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    background: var(--roxo-medio);
+    border-radius: 20px;
+    padding: 20px;
+}
+.projeto img{
+    height: 200px;
+    width: inherit;
+    align-self: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.projeto a{
+    text-decoration: none;
+}
+.projeto a:first-of-type{
+    margin: 10px 0;
+}
+.projeto label{
+    width: fit-content;
+    align-self: flex-end;
+    position: absolute;
+    background: var(--verde);
+    padding: 6px;
+    border-radius: 10px;
+    margin: 10px 10px 0 0px;
+    font-family: 'Imprima', sans-serif;
+    font-weight: bold;
+}
+/*pagina contato*/
+.contato{
+    align-items: center;
+    max-width: 900px;
+    gap: 12px;
+}
+.contato input{
+    width: calc(100% - 40px);
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    text-align: start;
+    background: none;
+    border: 1px solid white;
+    padding: 0 20px;
+}
+.contato input::placeholder{
+    color: #949494;
+}
+.contato button{
+    width: 100%;
+    height: 50px;
+    background: var(--verde);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.fale-comigo, .contato-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contato-social{
+    background: var(--roxo-claro);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+    border: 1px solid white;
+}
+.contato-social img{
+    height: 32px;
+}
+.contato-social p:last-child{
+    font-size: 14px;
+}
+@media (max-width:1000px) {
+    .curriculo img{
+        height: 50vh;
+    }
+}
+@media only screen and (max-width: 900px){
+    :root{
+        --largura-sessao: 90vw;
+        --h1-size: 24px;
+        --h3-size: 17px;
+        --p-size: 16px;
+    }
+    
+#fotoPerfil{
+    height: 55vh;
+}
+
+.caixas{
+    flex-direction: column;
+}
+.projeto{
+    width: 37vw;
+}
+.contato{
+    width: calc(var(--largura-sessao) - 40px);
+}
+}
+@media (max-width:800px){
+    .curriculo img{
+        display: none;
+    }
+    .curriculo{
+        align-items: flex-start;
+    }
+    .curriculo .informacoes{
+        margin-top: 5vh;
+    }
+    .curriculo .texto-destaque{
+            left: 50%;
+            transform: translateX(-50%);
+    }
+    .botoes{
+        justify-content: center;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .servico{
+        width: 28%;
+    }
+    .servico h2{
+        font-size: 22px;
+    }
+    .servico p{
+        font-size: 18px;
+    }
+    
+.experiencia{
+    width: 46%;
+}
+.experiencia h2{
+    font-size: 18px;
+}
+.experiencia p{
+    font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 600px){
+    :root{
+        --largura-sessao: 90vw;
+        --h1-size: 24px;
+        --h3-size: 17px;
+        --p-size: 16px;
+    }
+
+    main section{
+        align-items: initial;
+    }
+    #fotoPerfil{
+        display: none;
+    }
+    #fotoPerfil2{
+        display: block;
+        height: 25vh;
+        width: max-content;
+    }
+    main .apresentacao{
+        padding-top: 5vh;
+        gap: 6px;
+        width: 100%;
+    }
+    main .apresentacao .texto-destaque, #fotoPerfil2, .social, #btnSobre{
+        margin: 0 auto;
+    }
+    #deslize::before{
+        display: none;
+    }
+    header nav, .navegacao-mobile{
+        gap: 15px;
+    }
+    footer nav{
+        gap: 2px;
+        flex-direction: column;
+    }
+    footer .topo{
+        align-self: flex-end;
+    }
+    footer section{
+        flex-direction: column-reverse;
+    }
+    .footer-content{
+        width: 100%;
+    }
+    p , .box p{
+        font-size: 15px;
+    }
+
+    
+.projeto{
+    width: 100%;
+}
+
+.infos , .infos p{
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+.curriculo .texto-destaque{
+    font-size: 6vw;
+    margin-bottom: 30px;
+}
+.botoes{
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.botoes button{
+    font-size: 20px
+}
+.curriculo{
+    justify-content: center;
+}
+.servico{
+    width: 43%;
+}
+.experiencia{
+    width: calc(100% - 20px);
+}
+}
+
+@media only screen and (max-width: 430px){
+    header{
+        display: none;
+    }
+    main{
+        height: 100vh;
+    }
+    main #deslize{
+        bottom: 100px;
+    }
+    .navegacao-mobile{
+        display: flex;
+        gap: 1.5vw;
+    }
+    .navegacao-mobile a{
+        font-size: 3.5vw;
+    }
+    main .apresentacao button{
+        margin-top: 0;
+        font-size: 4vw;
+    }
+    main .apresentacao .social a img{
+        padding: 5px;
+    }
+    footer section{
+        padding: 20px 0 100px;
+    }
+    .servico img{
+        height: 50px;
+    }
+    .servico h2{
+        font-size: 20px;
+    }
+    .servico p{
+        font-size: 16px;
+    }
+}
+

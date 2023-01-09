@@ -309,8 +309,8 @@ footer .topo{
 }
 footer .topo a img{
     background: var(--roxo-medio);
-    padding: 7px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 12px;
     transform: rotate(180deg);
     transition: .3s;
     border: 1px solid var(--roxo-medio);
@@ -473,13 +473,15 @@ footer .topo a img:hover{
     display: flex;
     flex-direction: column;
     width: 35vw;
+    max-width: 500px;
     background: var(--roxo-medio);
     border-radius: 20px;
     padding: 20px;
 }
 .projeto img{
     height: 200px;
-    width: inherit;
+    width: 100%;
+    object-fit: cover;
     align-self: center;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -507,7 +509,7 @@ footer .topo a img:hover{
     max-width: 900px;
     gap: 12px;
 }
-.contato input{
+.contato input, .contato textarea{
     width: calc(100% - 40px);
     height: 50px;
     border-radius: 10px;
@@ -516,6 +518,11 @@ footer .topo a img:hover{
     background: none;
     border: 1px solid white;
     padding: 0 20px;
+}
+.contato textarea{
+    min-height: 150px;
+    padding-top: 10px;
+    resize: vertical;
 }
 .contato input::placeholder{
     color: #949494;
@@ -736,4 +743,11 @@ footer .topo a img:hover{
         font-size: 16px;
     }
 }
-
+@media only screen and (max-height: 600px){
+    main{
+        height: 110vh;
+    }
+    main #deslize{
+        bottom: 0px;
+    }
+}

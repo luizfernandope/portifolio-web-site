@@ -23,11 +23,13 @@
 
     <section class="contato">
         <h2>Proposta/Projeto</h2>
-        <input type="text" placeholder="seu nome">
-        <input type="text" placeholder="seu email">
-        <input type="text" placeholder="assunto">
-        <input type="text" placeholder="escreva sua proposta aqui">
-        <button>enviar</button>
+        
+        <form class="contato" action="https://formsubmit.co/ad07e20cd12a54f30442ef36970f367f" method="POST">
+            <input type="text" name="name" placeholder="seu nome" required>
+            <input type="email" name="email" placeholder="seu email" required>
+            <textarea name="message" placeholder="escreva sua proposta aqui" required></textarea>
+            <button type="submit">Enviar</button>
+       </form>
     </section>
 
     <section class="fale-comigo">
@@ -68,7 +70,7 @@
                 <p>© Copyright 2022, Luiz Fernando Pegorari - Todos direitos reservados</p>
             </div>
 
-            <div class="topo">
+            <div class="topo" id="topo">
                 <a href="#header"><img src="img/setaDown.png" alt="" width="40"></a>
                 <p>topo</p>
             </div>
@@ -81,5 +83,6 @@
         <a href="portifolio.html">portifólio</a>
         <a href="contato.html" class="atual">contato</a>
     </nav>
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>

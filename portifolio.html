@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luiz Fernando Pegorari</title>
     <link rel="stylesheet" href="style/estilo.css">
-
+    
 </head>
 <body>
-    
     <header id="header">
         <nav class="header-links">
             <a href="index.html">inicio</a>
@@ -25,37 +24,37 @@
     <div class="filtros-box">
         <div class="filtro">
             <input type="radio" checked="checked" name="radio" value="todos" id="todos">
-            <label for="todos" >TODOS</label>
+            <label for="todos" onclick="filtrar(1)">TODOS</label>
         </div>
         <div class="filtro">
             <input type="radio" name="radio" value="web" id="web">
-            <label for="web">WEB</label>
+            <label for="web" onclick="filtrar(2)">WEB</label>
         </div>
         <div class="filtro">
-            <input type="radio" name="radio" value="app" id="app">
-            <label for="app">APP</label>
+            <input type="radio" name="radio" value="app" id="app" >
+            <label for="app" onclick="filtrar(3)">APP</label>
         </div>
         <div class="filtro">
             <input type="radio" name="radio" value="design" id="design">
-            <label for="design">DESIG</label>
+            <label for="design" onclick="filtrar(4)">DESIG</label>
         </div>
     </div>
 
     <section class="projetos">
-        <div class="projeto">
+        <div class="projeto web">
             <label class="tipo">WEB</label>
             <img src="https://user-images.githubusercontent.com/74561722/206309110-008846ba-f906-4db3-9ea4-ea6ee774152a.png" alt="">
             <h2>Site da empresa mewtwo</h2>
             <a href="https://tcc-mewtwo.onrender.com/" target="_blank">Demo ▶️</a>
             <a href="https://github.com/luizfernandope/siteTCC" target="_blank">Code 🧑‍💻</a>
         </div>
-        <div class="projeto">
+        <div class="projeto design">
             <label class="tipo">DESIGN</label>
             <img src="https://lh3.googleusercontent.com/k1vT1GVw02lSKVpaQj3hSeYFDB_mE53SG-71e7nITiTUFjYbcMQrUyKT648d-a4rsgBzuZJ-mS87v5uE3JltCdTeIzSfeGScyqrm14geh1kI0EvpQkUaxWJJbsAERG4LGGxDuPy8fu8-yJJU7x6LcQxtwzk5usf4aAeYcbVv0eBu_8eK3ypKQnQakmtpxY_D-D5mQsfxnFpl-RNVsubvaZ87I8UdUhO0LDlYGtMDhBRqaL3yRd8CV-ZJDDfefZgFjzaRoSglIYs7LB5fvj-__K3m5fI_o2FdMno0Ot8q5zVaTLzKLY9lwOfKKpMIe7Ss9PjhCKgkp-Ng_vjclUKtRfLytqVx6u6b2sKYwKYQXAYwirw4bhTbT7N-O9PN5FlTQ_8nfDiH6NU7-67_cdXDHXwXOwRV_bm1cYnK4Gkx7H_vbof1StKEWOixorM9n3OBm76coy73VAqrcvyvowN1dDbciOhdSAY1E-Ru061LkFeAzeka5rbs4eJOwJpFPwUicabcG8MSh0s60dY_EiJYkpEeUDC4mcc1h_lodFw4Kvo2n7fvTLH_63hK4tQdGdvRuNN3qu2Qz3qOhgITVe1IuJdvMX4j7OLtvIEO95HKT3d1KL6npx3-u3m0lwynemHgcwjnmyd1PeoFi1G8F3mUPhqbRmklMkToUGwCx6Oedsuy2jtNMUrTLHRNSjuFgi2jYbwHfe0_q1iiXyWMKQcNqiBJqnMjOsv84d0UyTQ4bFmeVn5L6YZU0wHegiC7PYzyB8gIRiIpq_VRoduHNXzbBUoLI6FfWPKSOwArIIIhPhfg_YD8XU_0AYSE1QUmwBUtHb4TlMAcKPQmTaeOjtVwQc26KlP4kVDo_mm6BfPgv8odnygfqvMlgws6frMw9egXaqspeKrtqC-oQ9AH10n3Br55XhbkR01DGFOyYtU8HN05_hnXlos_5j29OVZqHOm7ierbf4PNxUBkLOyXytiYm0WNeItMGYCc7fFnVgmVP7FpLVmgTyepu2XTHO8DVUOntvXbeWfm6t8w3oaahKSowIcGfruPrUxXKYyBgJkP7-ZGXQtvFa6ergRCjGyt=w1169-h931-no?authuser=0" alt="">
             <h2>Logo design Ouroboros fight club</h2>
             <a href="https://drive.google.com/file/d/1QnsOBlk7nvlZAEhshO5qEtQqfiMDubTV/view?usp=sharing" target="_blank">Demo ▶️</a>
         </div>
-        <div class="projeto">
+        <div class="projeto app">
             <label class="tipo">APP</label>
             <img src="https://user-images.githubusercontent.com/74561722/211221675-358ab5a3-929f-4c53-a1c8-1612a70327cd.jpg" alt="">
             <h2>App para clínica odonto</h2>
@@ -78,7 +77,7 @@
                 <p>© Copyright 2022, Luiz Fernando Pegorari - Todos direitos reservados</p>
             </div>
 
-            <div class="topo">
+            <div class="topo" id="topo">
                 <a href="#header"><img src="img/setaDown.png" alt="" width="40"></a>
                 <p>topo</p>
             </div>
@@ -91,5 +90,6 @@
         <a href="portifolio.html" class="atual">portifólio</a>
         <a href="contato.html">contato</a>
     </nav>
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>

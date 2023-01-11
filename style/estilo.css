@@ -198,9 +198,11 @@ main #deslize img{
 #fotoPerfil{
     max-height: 75vh;
     margin-bottom: 100px;
+    border-radius: 20px;
 }
 #fotoPerfil2{
     display: none;
+    border-radius: 20px;
 }
 @keyframes deslize {
     0%{transform: translateY(-0px);}
@@ -330,6 +332,7 @@ footer .topo a img:hover{
     height: calc(100vh - 60px);
     align-items: center;
     justify-content: space-between;
+    gap: 60px;
 }
 .informacoes{
     height: 60%;
@@ -482,7 +485,6 @@ footer .topo a img:hover{
     height: 200px;
     width: 100%;
     object-fit: cover;
-    align-self: center;
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -749,5 +751,28 @@ footer .topo a img:hover{
     }
     main #deslize{
         bottom: 0px;
+    }
+}
+@media (max-height:550px) {
+    main{
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 60px;
+    }
+    main #deslize{
+        position: relative;
+        left: 0;
+        transform: none;
+        margin-top: 30px;
+    }
+    .curriculo{
+        height: fit-content;
+        padding-top: 5vh;
+    }
+}
+@media (max-width:340px) {
+    
+    .servico{
+        width: 100%;
     }
 }

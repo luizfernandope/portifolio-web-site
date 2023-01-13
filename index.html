@@ -7,6 +7,8 @@
     <title>Luiz Fernando Pegorari</title>
     <link rel="stylesheet" href="style/estilo.css">
     <link rel="shortcut icon" href="img/perfil.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header id="header">
@@ -39,9 +41,9 @@
         <a href="#sobremim" id="deslize"><img src="img/setaDown.png" alt="" width="40"></a>
     </main>
 
-    <section id="sobremim">
+    <section id="sobremim" >
         <h1 class="special-title">Sobre mim</h1>
-        <div class="texto">
+        <div class="texto" data-aos="fade-up">
             <p>Desde pequeno, amante da tecnologia, após o ensino fundamental em 2019, prestei concurso e  passei para o curso técnico em “ADS”, me tornei um <span>Desenvolvedor Full Stack junior</span>.<br>
                 Sou observardor, apreciador filmes, séries, quadrinhos, músicas, video-games e curioso em desbravar novas tecnologias.<br>
                 <span>Tenho sempre  buscado por soluções simples e completas</span>.<br>
@@ -50,7 +52,7 @@
             <p>Hoje com 17 anos, tenho conhecimento <span>para criação de web sites, apps e designs</span> da forma correta com boa documentação e ótimos resultados. Gosto de desafios e mais ainda de apreender na prática, boas interações em equipe, pensamento perspicaz e pontual em atender prazos. </p>
         </div>
         <div class="caixas">
-            <div class="box" id="box-destaques">
+            <div class="box" id="box-destaques" data-aos="fade-up">
                 <h3>Destaques 🚩</h3>
                 <p>💭 Nascido e criado em <span>Praia Grande</span>, São Paulo 🇧🇷</p>
                 <p>💭 Recém-formado na ETEC em <span>análise e desenvolvimento de sistemas</span></p>
@@ -59,7 +61,7 @@
                 <p>💭 Procuro ser criativo e <span>livre de pensamentos fixos</span></p>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <h3>Coisas favoritas 🤩</h3>
                 <p>Filmes 🎬</p>
                 <p>Games 🎮</p>
@@ -73,8 +75,8 @@
 
     <section class="skills">
         <h1 class="special-title">Skills</h1>
-        <div class="caixas">
-            <div class="box">
+        <div class="caixas" >
+            <div class="box" data-aos="fade-up">
                 <h3>Frontend developer</h3>
                 <div class="divisor">
                     <p>✅ HTML<br><span>intermediario</span></p>
@@ -94,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <h3>Backend developer</h3>
                 <div class="divisor">
                     <p>✅ C#<br><span>intermediario</span></p>
@@ -140,5 +142,9 @@
         <a href="contato.html">contato</a>
     </nav>
     <script type="text/javascript" src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

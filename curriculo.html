@@ -7,6 +7,8 @@
     <title>Luiz Fernando Pegorari</title>
     <link rel="stylesheet" href="style/estilo.css">
     <link rel="shortcut icon" href="img/perfil.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     
@@ -49,8 +51,8 @@
 
     <section class="skills">
         <h1 class="special-title">Skills</h1>
-        <div class="caixas">
-            <div class="box">
+        <div class="caixas" >
+            <div class="box" data-aos="fade-up-right">
                 <h3>Frontend developer</h3>
                 <div class="divisor">
                     <p>✅ HTML<br><span>intermediario</span></p>
@@ -70,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up-right">
                 <h3>Backend developer</h3>
                 <div class="divisor">
                     <p>✅ C#<br><span>intermediario</span></p>
@@ -92,37 +94,37 @@
 
         <h1 class="special-title">Serviços</h1>
         <div class="servicos">
-            <div class="servico">
+            <div class="servico" data-aos="flip-left" data-aos-duration="1000">
                 <img src="img/code.svg" alt="">
                 <h2>Front-end</h2>
                 <p>Para criação e suporte de sites web, sendo responsivo para todos os aparelhos e cumprindo propostas antepostas.</p>
             </div>
 
-            <div class="servico">
+            <div class="servico" data-aos="flip-right" data-aos-duration="1000">
                 <img src="img/terminal.svg" alt="">
                 <h2>Back-end</h2>
                 <p>Elaboração e manutenção de servicos web com intuito de solucionar a comunicação do sistema com front-end.</p>
             </div>
 
-            <div class="servico">
+            <div class="servico" data-aos="flip-left" data-aos-duration="1000">
                 <img src="img/phone.svg" alt="">
                 <h2>Android App</h2>
                 <p>Capacidade de criação de apps android do zero, para qualquer dispositivo com sistema operacional android.</p>
             </div>
 
-            <div class="servico">
+            <div class="servico" data-aos="flip-right" data-aos-duration="1000">
                 <img src="img/database.svg" alt="">
                 <h2>Database</h2>
                 <p>Ánalise, criação e manutenção do Banco de dados de um determinado sistema. Para ter controle de todos os dados obtidos.</p>
             </div>
 
-            <div class="servico">
+            <div class="servico" data-aos="flip-left" data-aos-duration="1000">
                 <img src="img/pincel.svg" alt="">
                 <h2>Designer gráfico</h2>
                 <p>Capacidade de elaborar a arte ou identidade visual de uma determinada marca. Assim melhorando-a visualmente e transmitindo sua vibe.</p>
             </div>
 
-            <div class="servico">
+            <div class="servico" data-aos="flip-right" data-aos-duration="1000">
                 <img src="img/mail.svg" alt="">
                 <h2>Email marketing</h2>
                 <p>Efetuar o marketing por email de produtos e promoções para assim aumentar a conversão de vendas e o retorno para empresa.</p>
@@ -133,23 +135,23 @@
     <section>
         <h1 class="special-title">Experiência   </h1>
 
-        <div class="experiencia">
+        <div class="experiencia" data-aos="fade-up-right">
             <h3>2020-2022</h3>
             <h2 class="texto-destaque">Analista e desenvolvedor de software</h2>
             <p>Na empresa e instituição ETEC, fui resposável por analisar documentos, manter o banco de dados interno e desenvolver na linguagem Java. Dando suporte para toda a equipe e cumprindo ciclos de trabalho.</p>
         </div>
     </section>
 
-    <section class="cards">
-        <div class="card">
+    <section class="cards" >
+        <div class="card" data-aos="zoom-in-up">
             <h1>>> 6+</h1>
             <p>Projetos concluídos</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in-up">
             <h1>>> 10+</h1>
             <p>Clientes satisfeitos</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in-up">
             <h1>>> 2+</h1>
             <p>Anos de experiência</p>
         </div>
@@ -183,5 +185,9 @@
         <a href="contato.html">contato</a>
     </nav>
     <script type="text/javascript" src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

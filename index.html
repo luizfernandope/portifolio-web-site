@@ -2,36 +2,36 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfólio de Luiz Fernando Pegorari, Desenvolvedor Full Stack">
+    <meta name="keywords" content="desenvolvedor, full stack, portfólio, Luiz Fernando Pegorari">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luiz Fernando Pegorari</title>
+    <title>👨‍💻 Luiz Fernando Pegorari</title>
     <link rel="stylesheet" href="style/estilo.css">
-    <link rel="shortcut icon" href="img/perfil.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
     <header id="header">
         <nav class="header-links">
-            <a href="index.html" class="atual">inicio</a>
-            <a href="curriculo.html">currículo</a>
-            <a href="portifolio.html">portifólio</a>
-            <a href="contato.html">contato</a>
+            <a href="#header">inicio</a>
+            <a href="#skills">currículo</a>
+            <a href="#projetos">portifólio</a>
+            <a href="#contato">contato</a>
         </nav>
     </header>
 
     <main>
-        <section class="conteudo">
+        <section class="conteudo" id="topo">
             <div class="apresentacao">
                 <h3 class="texto-destaque">Bem vindo ao meu portifólio</h3>
                 <img src="img/perfil.png" alt="" id="fotoPerfil2" >
                 <h1>Sou <span>Luiz Fernando Pegorari</span></h1>
                 <h3 id="fullstackdev">Full Stack Developer</h3>
-                <p>Recém formado em análise e desenvolvimento de sistemas, sou um programador dedicado e com fascínio em desenvolver soluções marcantes e eficazes...</p>
+                <p>Atualmente, curso Análise e Desenvolvimento de Sistemas na FATEC Guarulhos e estou sempre em busca de novos desafios e aprendizados.</p>
                 <div class="social">
                     <a href="https://github.com/luizfernandope" target="_blank"><img src="img/github.svg" alt=""></a>
                     <a href="https://www.instagram.com/luizlf.jpg/" target="_blank"><img src="img/instagram.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/luiz-fernando-pegorari-78b853225/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/luiz-fernando-pegorari/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
                 </div>
                 <a href="#sobremim" id="btnSobre"><button>sobre mim</button></a>
             </div>
@@ -44,55 +44,35 @@
     <section id="sobremim" >
         <h1 class="special-title">Sobre mim</h1>
         <div class="texto" data-aos="fade-up">
-            <p>Desde pequeno, amante da tecnologia, após o ensino fundamental em 2019, prestei concurso e  passei para o curso técnico em “ADS”, me tornei um <span>Desenvolvedor Full Stack junior</span>.<br>
-                Sou observardor, apreciador filmes, séries, quadrinhos, músicas, video-games e curioso em desbravar novas tecnologias.<br>
-                <span>Tenho sempre  buscado por soluções simples e completas</span>.<br>
-                Com muita vontade de trabalhar na área, me sinto apto a bucar uma oportunidade e poder realizar diversas metas e contribuir para uma excelência de trabalho.
+            <p>Desde jovem, sou apaixonado por tecnologia. Iniciei minha jornada com um curso técnico em Análise e Desenvolvimento de Sistemas e, atualmente, estou no 5º semestre da graduação na FATEC Guarulhos. 
+                Tenho experiência no desenvolvimento de aplicações web, APIs e interfaces responsivas, utilizando tecnologias como <span>HTML, CSS, JavaScript, React, C#, Java, Spring, SQL</span> entre outras.
+                <br>
+                Sou entusiasta de boas práticas de desenvolvimento, como clean code e versionamento com Git. Acredito na importância da colaboração em equipe e estou sempre disposto a aprender e compartilhar conhecimentos.
             </p>
-            <p>Hoje com 17 anos, tenho conhecimento <span>para criação de web sites, apps e designs</span> da forma correta com boa documentação e ótimos resultados. Gosto de desafios e mais ainda de apreender na prática, boas interações em equipe, pensamento perspicaz e pontual em atender prazos. </p>
-        </div>
-        <div class="caixas">
-            <div class="box" id="box-destaques" data-aos="fade-up">
-                <h3>Destaques 🚩</h3>
-                <p>💭 Nascido e criado em <span>Praia Grande</span>, São Paulo 🇧🇷</p>
-                <p>💭 Recém-formado na ETEC em <span>análise e desenvolvimento de sistemas</span></p>
-                <p>💭 Habitualmente <span>caprichoso e cuidadoso</span></p>
-                <p>💭 <span>Sem medo de errar</span>, podemos criar qualquer coisa. Basta começar</p>
-                <p>💭 Procuro ser criativo e <span>livre de pensamentos fixos</span></p>
-            </div>
-
-            <div class="box" data-aos="fade-up">
-                <h3>Coisas favoritas 🤩</h3>
-                <p>Filmes 🎬</p>
-                <p>Games 🎮</p>
-                <p>Musculação 🏋️</p>
-                <p>Esportes ⚽</p>
-                <p>Musicas 🎵</p>
-                <p>Bichos 🐾</p>
-            </div>
+            
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h1 class="special-title">Skills</h1>
         <div class="caixas" >
             <div class="box" data-aos="fade-up">
                 <h3>Frontend developer</h3>
                 <div class="divisor">
-                    <p>✅ HTML<br><span>intermediario</span></p>
+                    <p>✅ HTML<br><span>avançado</span></p>
                     <p>✅ CSS<br><span>avançado</span></p>
                 </div>
                 <div class="divisor">
-                    <p>✅ JavaScript<br><span>básico</span></p>
-                    <p>✅ React<br><span>básico</span></p>
+                    <p>✅ JavaScript<br><span>intermediario</span></p>
+                    <p>✅ React<br><span>intermediario</span></p>
                 </div>
                 <div class="divisor">
-                    <p>✅ Bootstrap<br><span>intermediario</span></p>
-                    <p>✅ XML<br><span>intermediario</span></p>
+                    <p>✅ Bootstrap<br><span>avançado</span></p>
+                    <p>✅ XML<br><span>avançado</span></p>
                 </div>
                 <div class="divisor">
-                    <p>✅ GitHub<br><span>intermediario</span></p>
-                    <p>✅ Angular<br><span>básico</span></p>
+                    <p>✅ GitHub<br><span>avançado</span></p>
+                    <p>✅ Angular<br><span>intermediario</span></p>
                 </div>
             </div>
 
@@ -100,7 +80,7 @@
                 <h3>Backend developer</h3>
                 <div class="divisor">
                     <p>✅ C#<br><span>intermediario</span></p>
-                    <p>✅ Java<br><span>intermediario</span></p>
+                    <p>✅ Java<br><span>avançado</span></p>
                 </div>
                 <div class="divisor">
                     <p>✅ C++<br><span>básico</span></p>
@@ -110,36 +90,243 @@
                     <p>✅ Oracle<br><span>intermediario</span></p>
                     <p>✅ . NET<br><span>intermediario</span></p>
                 </div>
+                <div class="divisor">
+                    <p>✅ Firebase<br><span>avançado</span></p>
+                    <p>✅ MySQL<br><span>avançado</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="caixa-central" style="margin: 0px auto;">
+        <div class="botoes">
+            <a href="rsc/curriculo_LuizFernandoPegorari.pdf" download="curriculo_Luiz_Fernando_Pegorari"><button>download cv</button></a>
+            <a href="#servicos"><button>ver mais</button></a>
+        </div>
+    </div>
+    
+    <section id="servicos">
+
+        <h1 class="special-title">Serviços</h1>
+        <div class="servicos">
+            <div class="servico" data-aos="flip-left" data-aos-duration="1000">
+                <img src="img/code.svg" alt="">
+                <h2>Front-end</h2>
+                <p>Para criação e suporte de sites web, sendo responsivo para todos os aparelhos e cumprindo propostas antepostas.</p>
+            </div>
+
+            <div class="servico" data-aos="flip-right" data-aos-duration="1000">
+                <img src="img/terminal.svg" alt="">
+                <h2>Back-end</h2>
+                <p>Elaboração e manutenção de servicos web com intuito de solucionar a comunicação e compreensão dos dados sistema com o front-end.</p>
+            </div>
+
+            <div class="servico" data-aos="flip-left" data-aos-duration="1000">
+                <img src="img/phone.svg" alt="">
+                <h2>Mobile apps</h2>
+                <p>Capacidade de criação de aplicativos mobile do zero, para qualquer dispositivo com sistema operacional android/ios.</p>
+            </div>
+
+            <div class="servico" data-aos="flip-right" data-aos-duration="1000">
+                <img src="img/database.svg" alt="">
+                <h2>Database</h2>
+                <p>Ánalise, criação e manutenção do Banco de dados de um determinado sistema. Para ter controle de todos os dados obtidos.</p>
+            </div>
+
+            <div class="servico" data-aos="flip-left" data-aos-duration="1000">
+                <img src="img/pincel.svg" alt="">
+                <h2>Design web</h2>
+                <p>Capacidade de elaborar mockups, artes e identidades visuais para marcas e prdutos. Melhorando a conversão e o visual, transmitindo as ideias e culturas desejadas.</p>
+            </div>
+
+            <div class="servico" data-aos="flip-right" data-aos-duration="1000">
+                <img src="img/mail.svg" alt="">
+                <h2>Email marketing</h2>
+                <p>Efetuar o marketing por email de produtos e promoções para assim aumentar a conversão e o retorno.</p>
             </div>
         </div>
     </section>
 
+    <section>
+        <h1 class="special-title">Experiência   </h1>
+        <div class="experiencia" data-aos="fade-up-right">
+            <h3>2024-Atual</h3>
+            <h2 class="texto-destaque">Freelancer</h2>
+            <p>Na plataforma 99freelas faço projetos desenvolvendo sites, APIs REST, integraçoes com bancos de dados, analise de dados com power BI,e criaçao de mockups e designs interativos</p>
+        </div>
+        <br>
+        <div class="experiencia" data-aos="fade-up-right">
+            <h3>2020-2022</h3>
+            <h2 class="texto-destaque">Analista e desenvolvedor</h2>
+            <p>Na instituição ETEC, fui resposável por analisar documentos, manter o banco de dados interno e desenvolver na linguagem Java. Dando suporte para toda a equipe e cumprindo ciclos de trabalho (Excel ).</p>
+        </div>
+    </section>
+
+    <section class="cards" >
+        <div class="card" data-aos="zoom-in-up">
+            <h1>>> 7+</h1>
+            <p>Projetos concluídos</p>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <h1>>> 10+</h1>
+            <p>Clientes satisfeitos</p>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <h1>>> 2+</h1>
+            <p>Anos de experiência</p>
+        </div>
+    </section>
+
+    
+    <div class="caixa-central" id="projetos">
+        <h1 class="special-title">Projetos</h1>
+
+        <div class="filtros-box">
+            <div class="filtro">
+                <input type="radio" checked="checked" name="radio" value="todos" id="todos">
+                <label for="todos" onclick="filtrar(1)">TODOS</label>
+            </div>
+            <div class="filtro">
+                <input type="radio" name="radio" value="web" id="web">
+                <label for="web" onclick="filtrar(2)">WEB</label>
+            </div>
+            <div class="filtro">
+                <input type="radio" name="radio" value="app" id="app" >
+                <label for="app" onclick="filtrar(3)">APP</label>
+            </div>
+            <div class="filtro">
+                <input type="radio" name="radio" value="design" id="design">
+                <label for="design" onclick="filtrar(4)">DESIG</label>
+            </div>
+        </div>
+    </div>
+    <section class="projetos" >
+<div class="projeto web">
+            <label class="tipo">WEB</label>
+            <img src="img/rf-id-site.png" alt="">
+            <h2>Site para controle de acesso com integração arduino e firebase</h2>
+            <a href="https://rfid-site.vercel.app/" target="_blank">Demo ▶️</a>
+            <a href="https://github.com/luizfernandope/RFID-Access-site.git" target="_blank">Code 🧑‍💻</a>
+        </div>
+        <div class="projeto app">
+            <label class="tipo">APP</label>
+            <img src="img/olxSolidario.jpg" alt="">
+            <h2>App para anunciar trocas e doações</h2>
+            <a href="https://drive.google.com/file/d/1wpIskQmDn4zGjCg5mOAzc0Sd5_vVrBpw/view?usp=sharing" target="_blank">Demo ▶️</a>
+            <a href="https://github.com/luizfernandope/olx-solidario-app" target="_blank">Code 🧑‍💻</a>
+        </div>
+        <div class="projeto app">
+            <label class="tipo">APP</label>
+            <img src="https://user-images.githubusercontent.com/74561722/211221675-358ab5a3-929f-4c53-a1c8-1612a70327cd.jpg" alt="">
+            <h2>App para clínica odontológica</h2>
+            <a href="https://www.figma.com/proto/DyX5XImrit5ECVenMcfZ4z/apresentacao-tcc-industrial?node-id=4%3A1066" target="_blank">Demo ▶️</a>
+            <a href="https://github.com/luizfernandope/tcc-app-oficial" target="_blank">Code 🧑‍💻</a>
+        </div>
+        <div class="projeto web">
+            <label class="tipo">WEB</label>
+            <img src="https://user-images.githubusercontent.com/74561722/213486201-90e9d8ca-1fe8-4e44-84a4-63b017634143.png" alt="">
+            <h2>Site da empresa Ouroboros fight club</h2>
+            <a href="https://ouroboros-site.onrender.com" target="_blank">Demo ▶️</a>
+            <a href="https://github.com/luizfernandope/ouroboros-react-site" target="_blank">Code 🧑‍💻</a>
+        </div>
+        <div class="projeto design">
+            <label class="tipo">DESIGN</label>
+            <div style="background-image: url(img/ouroboros.png); width: 100%; height: 100%; background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+            <h2>Logo design Ouroboros fight club</h2>
+        </div>
+        
+        <div class="projeto web">
+            <label class="tipo">WEB</label>
+            <img src="https://user-images.githubusercontent.com/74561722/206309110-008846ba-f906-4db3-9ea4-ea6ee774152a.png" alt="">
+            <h2>Site da equipe mewtwo</h2>
+            <a href="https://tcc-mewtwo.onrender.com/" target="_blank">Demo ▶️</a>
+            <a href="https://github.com/luizfernandope/siteTCC" target="_blank">Code 🧑‍💻</a>
+        </div>
+        
+        <div class="projeto design">
+            <label class="tipo">DESIGN</label>
+            <img src="img/logo-pecora.png" alt="">
+            <h2>Logo design Charcutaria Pecora</h2>
+        </div>
+        <div class="projeto design">
+            <label class="tipo">DESIGN</label>
+            <img src="img/foodzilla.jpg" alt="">
+            <h2>Design de app para restaurantes e consumidores</h2>
+            <a href="https://www.figma.com/proto/o1Q7stCIQWmXsbgPZioAs8/danki-code?node-id=5-61&p=f&t=yF65YSSepKNQ1nXr-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A61" target="_blank">Demo ▶️</a>
+        </div>
+        <div class="projeto design">
+            <label class="tipo">DESIGN</label>
+            <img src="https://private-user-images.githubusercontent.com/74561722/452492391-6792b816-46f4-4749-97a4-d6eebefeeeb9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDkzMjY1ODgsIm5iZiI6MTc0OTMyNjI4OCwicGF0aCI6Ii83NDU2MTcyMi80NTI0OTIzOTEtNjc5MmI4MTYtNDZmNC00NzQ5LTk3YTQtZDZlZWJlZmVlZWI5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjA3VDE5NTgwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYyZWNhNDZjNDc5YTkzOGMwMjAzZGYwOWNlM2Y1MzEyZTlkZWM4ZjI5OGZlMjc1Yzk1ODBmMjEyZmY3OWUxZjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0._lCNbogUqj0yfdq8sRSYveChSFYEalTk4Qou_cG8zAs" alt="">
+            <h2>Web design para site e-commerce</h2>
+            <a href="https://www.figma.com/proto/YDt2Rb8IsGuEtJvw3jRGAF/Pecora?node-id=107-96&t=S8HJklgS0XWswkbe-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=107%3A96&show-proto-sidebar=1" target="_blank">Demo ▶️</a>
+        </div>
+        </div>
+    </section>
+
+    <h1 class="texto-destaque" id="contato" style="margin-top: 100px;">Contate-me</h1>
+    <p class="descricao">Se teve algum interesse entre em contato aqui</p>
+
+    <section class="contato" >
+        <h2>Proposta/Projeto</h2>
+        
+        <form class="contato" action="https://formsubmit.co/ad07e20cd12a54f30442ef36970f367f" method="POST">
+            <input type="text" name="name" placeholder="seu nome" required>
+            <input type="email" name="email" placeholder="seu email" required>
+            <textarea name="message" placeholder="escreva sua proposta aqui" required></textarea>
+            <button type="submit">Enviar</button>
+       </form>
+    </section>
+
+    <section class="fale-comigo">
+        <h2>Fale comigo</h2>
+        <a href="mailto:luizpegorari@protonmail.com" target="_blank">
+            <div class="contato-social" data-aos="fade-up">
+                <img src="img/email-white.svg" alt="">
+                <h3>Email</h3>
+                <p>luizpegorari@protonmail.com</p>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/luiz-fernando-pegorari/" target="_blank">
+            <div class="contato-social" data-aos="fade-up">
+                <img src="img/linkedin.svg" alt="">
+                <h3>Linkedln</h3>
+                <p>Luiz Fernando Pegorari</p>
+            </div>
+        </a>
+        <a href="https://www.instagram.com/luizlf.jpg/" target="_blank">
+            <div class="contato-social" data-aos="fade-up">
+                <img src="img/instagram.svg" alt="">
+                <h3>Instagram</h3>
+                <p>@luizlf.jpg</p>
+            </div>
+        </a>
+    </section>
+    
     <footer>
         <section>
             <div class="footer-content">
                 <h1 class="special-title">Links</h1>
                 <nav class="footer-links">
-                    <a href="index.html" class="atual">inicio</a>
-                    <a href="curriculo.html">currículo</a>
-                    <a href="portifolio.html">portifólio</a>
-                    <a href="contato.html">contato</a>
+                    <a href="#header">inicio</a>
+                    <a href="#skills">currículo</a>
+                    <a href="#projetos">portifólio</a>
+                    <a href="#contato">contato</a>
                 </nav>
 
-                <p>© Copyright 2022, Luiz Fernando Pegorari - Todos direitos reservados</p>
+                <p>© Copyright 2025, Luiz Fernando Pegorari - Todos direitos reservados</p>
             </div>
 
             <div class="topo" id="topo">
-                <a href="#header"><img src="img/setaDown.png" alt="" width="40"></a>
+                <a href="#topo"><img src="img/setaDown.png" alt="" width="40"></a>
                 <p>topo</p>
             </div>
         </section>
     </footer>
 
     <nav class="navegacao-mobile">
-        <a href="index.html" class="atual">inicio</a>
-        <a href="curriculo.html">currículo</a>
-        <a href="portifolio.html">portifólio</a>
-        <a href="contato.html">contato</a>
+        <a href="#topo">inicio</a>
+        <a href="#skills">currículo</a>
+        <a href="#projetos">portifólio</a>
+        <a href="#contato">contato</a>
     </nav>
     <script type="text/javascript" src="script/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

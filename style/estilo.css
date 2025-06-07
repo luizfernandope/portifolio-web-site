@@ -18,6 +18,7 @@ span{
 p{
     font-size: 20px;
     font-family: 'Imprima', sans-serif;
+    line-height: 1.5;
 }
 h1{
     font-size:34px;
@@ -33,7 +34,10 @@ h1{
     --p-size: 2.3vh;
     --textos-size:20px;
 }
-
+.caixa-central{
+    width: var(--largura-sessao);
+    margin: 60px auto;
+}
 body{
     background: var(--roxo-escuro);
 }
@@ -227,7 +231,7 @@ section{
     width: 100%;
     height: 10px;
     background: var(--verde);
-    bottom: -10px;
+    bottom: -14px;
     left: 0;
 }
 .texto{
@@ -366,6 +370,7 @@ footer .topo a img:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 25px;
+    text-align: center;
 }
 .servico{
     background: var(--roxo-medio);
@@ -385,6 +390,7 @@ footer .topo a img:hover{
 .servico p{
     width: 100%;
 }
+
 .experiencia{
     width: 45%;
     border-radius: 10px;
@@ -443,11 +449,7 @@ footer .topo a img:hover{
 
 .filtros-box{
     display: inline-flex;
-    position: relative;
-    
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: calc(8px + 40px);
+    margin-top: 20px;
     
 }
 .filtro input{
@@ -537,6 +539,9 @@ footer .topo a img:hover{
     font-size: 16px;
     cursor: pointer;
 }
+.fale-comigo a{
+    text-decoration: none;
+}
 .fale-comigo, .contato-social{
     display: flex;
     flex-direction: column;
@@ -579,6 +584,14 @@ footer .topo a img:hover{
 }
 .projeto{
     width: 37vw;
+}
+.projeto_foto{
+    background-image: url(img/logo-pecora.png); 
+    width: 100%;
+    height: 100%; 
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 .contato{
     width: calc(var(--largura-sessao) - 40px);
